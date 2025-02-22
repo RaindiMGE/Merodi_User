@@ -1,0 +1,70 @@
+.container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px; 
+    padding: 0 8px;
+    position: absolute;
+    left: 16px;
+    top: -10px;
+    z-index: 1;
+}
+
+.inputBox {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    height: 48px;
+    width: 100%;
+}
+
+.input {
+    all: unset;
+    color: #67727E;
+    max-width: 528px;
+    width: 100%;
+}
+
+.error {
+    color: #E63838;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px; 
+}
+
+.input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #00101A inset;
+    -webkit-text-fill-color: #505862;
+}
+
+.input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #00101A inset;
+    -webkit-text-fill-color: #505862;
+}
+
+.input:-webkit-autofill:hover {
+    -webkit-box-shadow: 0 0 0px 1000px #00101A inset;
+    -webkit-text-fill-color: #505862;
+}
+
+.input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0px 1000px #00101A inset;
+    -webkit-text-fill-color: #505862;
+}
+
+
+@media (max-width: 768px) {
+    .inputBox {
+        height: 40px;
+    }
+}

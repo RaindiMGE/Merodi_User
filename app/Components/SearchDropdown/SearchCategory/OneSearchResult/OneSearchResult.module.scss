@@ -1,0 +1,26 @@
+.oneSearch {
+    display: flex;
+    gap: 4px;
+    padding: 8px 12px;
+    align-items: center;
+}
+
+.oneSearch:hover {
+    background: #1E222F;
+}
+
+.oneSearch span {
+    color: #67727E;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.oneSearch:hover span {
+    color: #E4E4E4;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}

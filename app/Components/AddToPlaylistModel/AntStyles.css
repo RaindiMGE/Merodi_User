@@ -1,0 +1,14 @@
+.ant-dropdown-menu {
+    border: 1px solid #1A182A !important;
+    background: #0E1220 !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+}
+
+.ant-dropdown {
+    border-radius: 0 !important;
+}
+
+.ant-dropdown-menu-item {
+    padding: 0 !important;
+}

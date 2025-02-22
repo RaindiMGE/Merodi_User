@@ -1,0 +1,109 @@
+.container {
+    background-color: #0E1220;
+    padding: 32px;
+    width: 704px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 412px;
+}
+
+.errorContainer {
+    background-color: #0E1220;
+    padding: 32px;
+    width: 704px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 452px;
+}
+
+.inputsContainer,
+.aboutPlaylistContainer,
+.inputsBox {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.inputsContainer,
+.inputsBox {
+    flex-direction: column;
+}
+
+.inputsContainer h3 {
+    color: #E4E4E4;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.aboutPlaylistContainer,
+.inputsBox {
+    width: 100%;
+}
+
+.addImgBox {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    color: #505862;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 196px;
+}
+
+.completeBox {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 660px;
+    }
+
+    .errorContainer {
+        width: 660px;
+        height: 440px;
+    }
+
+    .aboutPlaylistContainer {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 24px;
+        width: 327px;
+        gap: 24px;
+        height: 460px;
+    }
+
+    .errorContainer {
+        padding: 24px;
+        width: 327px;
+        gap: 24px;
+        height: 520px;
+    }
+
+    .aboutPlaylistContainer {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+}

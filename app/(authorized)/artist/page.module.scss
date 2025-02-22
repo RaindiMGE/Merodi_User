@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1168px;
+    background: #000D14;
+
+    .contentWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 32px;
+        max-width: 1168px;
+        width: 100%;
+
+        .popularMusicsWrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            h3 {
+                color: #E4E4E4;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 32px;
+            }
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .contentWrapper {
+            padding: 32px 24px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .contentWrapper {
+            padding: 24px 16px;
+
+            h3 {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+}

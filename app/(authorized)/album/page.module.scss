@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    max-width: 1168px;
+    width: 100%;
+
+    .main {
+        width: 100%;
+
+        .playlistTableWrapper {
+            padding: 32px;
+
+            
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .main {
+
+            .playlistTableWrapper {
+                padding: 24px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .main {
+
+            .playlistTableWrapper {
+                padding: 24px 16px;
+            }
+        }
+    }
+}

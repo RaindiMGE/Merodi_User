@@ -1,0 +1,16 @@
+.Topalbum {
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    display: flex;
+    padding-left: 24px;
+    background: #000D14;
+    .Albumtoptext {
+        color: #E4E4E4;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px; 
+    }
+}

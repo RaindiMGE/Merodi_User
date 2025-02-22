@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 200px;
+    height: 232px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+}
+
+.artistImage {
+    border-radius: 200px;
+}
+
+.container h3 {
+    color: #E4E4E4;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+@media (max-width: 1024px ) and (min-width: 769px) {
+    .container {
+        width: 192px;
+        height: 224px;
+    }
+
+    .artistImage {
+        width: 192px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 136px;
+        height: 168px;
+    }
+
+    .artistImage {
+        width: 136px;
+    }
+}

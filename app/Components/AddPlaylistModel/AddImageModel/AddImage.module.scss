@@ -1,0 +1,61 @@
+.container, .containerAfterChoose, .choosenImg, .chooseImgInput {
+    width: 184px;
+    height: 184px;
+}
+
+.container, .containerAfterChoose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container {
+    border-radius: 8px;
+    border: 1px dashed #505862;
+}
+
+.backImg {
+    position: absolute;
+    z-index: 0;
+    width: 40px;
+}
+
+.afterChoose {
+    display: none;
+}
+
+.chooseImgInput {
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.choosenImg {
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.error {
+    color: #E63838;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container, .containerAfterChoose, .choosenImg, .chooseImgInput {
+        width: 172px;
+        height: 172px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container, .containerAfterChoose, .choosenImg, .chooseImgInput {
+        width: 136px;
+        height: 136px;
+    }
+}

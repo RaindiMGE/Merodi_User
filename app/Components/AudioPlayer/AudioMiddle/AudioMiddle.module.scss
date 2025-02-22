@@ -1,0 +1,52 @@
+.content_middle {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+
+  .sidebuttons {
+    width: 24px;
+    height: 24px;
+  }
+
+  .rewindbuttons {
+    width: 32px;
+    height: 32px;
+  }
+
+  .pausebutton {
+    padding: 8px;
+    border-radius: 100%;
+    background-color: var(--primary-orange);
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    gap: 12px;
+  }
+
+  @media (max-width: 768px) {
+    .playNextIcon, .playPrewIcon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .pauseIcon, .resumeIcon {
+      width: 40px;
+      height: 40px;
+    }
+
+    .Shuffle {
+      display: none;
+    }
+
+    .Repeat {
+      display: none;
+    }
+  }
+
+}

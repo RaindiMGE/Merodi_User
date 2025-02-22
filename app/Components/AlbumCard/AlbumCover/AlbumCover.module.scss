@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.albumCover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.mainAlbumCover {
+    width: 164px;
+    position: relative;
+    z-index: 1;
+}
+
+.discBox {
+    position: absolute;
+    left: 108px;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-shrink: 1;
+}
+
+
+.secondaryAlbumCover {
+    flex-shrink: 0;
+    box-sizing: border-box;
+    border-radius: 58px;
+    border: 8px solid #000;
+    position: absolute;
+}
+
+
+@media (max-width: 768px) {
+    .mainAlbumCover {
+        width: 128px;
+    }
+
+    .discBox {
+        left: 84px;
+        width: 117px;
+        height: 117px;
+    }
+
+    .discImg {
+        width: 117px;
+        height: 117px;
+    }
+
+    .secondaryAlbumCover {
+        width: 45px;
+        height: 45px;
+    }
+}

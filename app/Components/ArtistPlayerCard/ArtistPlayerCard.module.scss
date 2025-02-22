@@ -1,0 +1,105 @@
+.container {
+    width: 100%;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    color: #67727E;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    max-width: 1104px;
+    height: 64px;
+    flex-wrap: nowrap;
+    border-radius: 16px;
+    border-bottom: 1px solid #1A182A;
+}
+
+.imgWrapper {
+    width: 10px;
+    transition: width 0.5s;
+    overflow: hidden;
+}
+
+.container:hover .imgWrapper {
+    width: 24px;
+}
+
+.albumInfo {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    color: #E4E4E4;
+    width: 328px;
+}
+
+.coverImage {
+    width: 40px;
+    height: 40px;
+}
+
+.albumInfo>div {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.artistName {
+    width: 386px;
+}
+
+.listensNumber {
+    width: 280px;
+}
+
+.duration {
+    display: flex;
+    justify-content: flex-end;
+    width: 70px;
+}
+
+.addToPlaylist {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    width: 24px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+        justify-content: space-between;
+    }
+
+    .albumInfo {
+        max-width: 230px;
+    }
+
+    .artistName {
+        max-width: 240px;
+    }
+
+    .listensNubmer {
+        max-width: 138px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        justify-content: space-between;
+    }
+
+    .albumInfo {
+        max-width: 212px;
+    }
+
+    .artistName {
+        display: none;
+    }
+
+    .listensNumber {
+        display: none;
+    }
+}

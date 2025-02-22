@@ -1,0 +1,52 @@
+.container {
+  position: relative;
+  display: flex;
+  gap: 42px;
+  align-items: center;
+}
+
+.inputWrapper {
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: #191d29;
+  display: flex;
+  gap: 4px;
+  width: 384px;
+  flex-wrap: nowrap;
+}
+
+.input {
+  all: unset;
+  width: 100%;
+  color: #67717e;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.searchDropdown {
+  position: absolute;
+  top: 48px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .inputWrapper {
+    width: 330px;
+  }
+}
+
+@media (max-width:768px)  {
+  .inputWrapper {
+    justify-content: flex-end;
+    background-color: unset;
+    max-width: 278px;
+    width: 100%;
+  }
+  .input {
+    display: none;
+  }
+  .input::placeholder{
+    color: transparent;
+  }
+
+}

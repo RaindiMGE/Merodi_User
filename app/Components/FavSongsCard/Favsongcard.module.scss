@@ -1,0 +1,260 @@
+@keyframes ShowPopUp {
+  0% {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+  }
+
+  100% {
+    top: calc((100vh - 414px) / 2);
+    left: calc((100% - 704px) / 2);
+    width: 704px;
+    height: 444px;
+  }
+}
+
+@keyframes HiddePopUp {
+  0% {
+    top: calc((100vh - 414px) / 2);
+    left: calc((100% - 704px) / 2);
+    width: 704px;
+    height: 444px;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+  }
+}
+
+.container {
+  display: flex;
+  max-width: 1168px;
+  width: 100%;
+  padding: 32px;
+  align-items: flex-end;
+  gap: 32px;
+  background: linear-gradient(90deg, #000D15 0%, #001A29 100%);
+}
+
+.heading {
+  display: flex;
+  gap: 56px;
+  align-items: center;
+}
+
+.favsongImage {
+  border-radius: 12px;
+}
+
+.paragraph {
+  color: #e4e4e4;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.paragraph span {
+  color: #67727e;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.favsongs {
+  color: #e4e4e4;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.mainDescription {
+  width: 100%;
+  max-height: 100px;
+  overflow-y: scroll;
+  color: #67727e;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+
+  &::-webkit-scrollbar {
+      width: 6px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background-color: linear-gradient(90deg, #000D15 0%, #001A29 100%);
+      border-radius: 10px;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+  
+      background-color: #55555587;
+      border-radius: 10px;
+      border: 2px solid #08061b;
+    }
+  
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #555;
+    }
+}
+
+.maindiv {
+  flex-direction: column;
+  display: flex;
+  gap: 24px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.paragraphdiv {
+  display: flex;
+}
+
+.playlistModel {
+  // position: relative;
+}
+
+.showPlaylistModel {
+  position: fixed;
+  overflow: hidden;
+  z-index: 6;
+  animation: ShowPopUp 1s forwards;
+}
+
+.hidePlaylistModel {
+  position: fixed;
+  overflow: hidden;
+  animation: HiddePopUp 0.01s forwards;
+}
+
+
+@media (min-width:769px) and (max-width:1024px) {
+  @keyframes ShowPopUp {
+    0% {
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+    }
+
+    100% {
+      top: calc((100vh - 400px) / 2);
+      left: calc((100% - 660px) / 2);
+      width: 660px;
+      height: 430px;
+    }
+  }
+
+  @keyframes HiddePopUp {
+    0% {
+      top: calc((100vh - 400px) / 2);
+      left: calc((100% - 660px) / 2);
+      width: 660px;
+      height: 430px;
+    }
+
+    100% {
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+    }
+  }
+
+  .container {
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .favsongImage {
+    width: 240px;
+    height: 240px;
+  }
+
+  .heading {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  @keyframes ShowPopUp {
+    0% {
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+    }
+
+    100% {
+      top: calc((100vh - 452px) / 2);
+      left: calc((100% - 328px) / 2);
+      width: 328px;
+      height: 590px;
+    }
+  }
+
+  @keyframes HiddePopUp {
+    0% {
+      top: calc((100vh - 452px) / 2);
+      left: calc((100% - 328px) / 2);
+      width: 328px;
+      height: 590px;
+    }
+
+    100% {
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+    }
+  }
+
+  .container {
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .favsongImage {
+    width: 184px;
+    height: 184px;
+  }
+
+  .description {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .heading {
+    gap: 24px;
+  }
+
+  .maindiv {
+    align-items: center;
+    gap: 20px;
+  }
+
+  .favsongs {
+    font-size: 32px;
+  }
+
+  .paragraphdiv {
+    gap: 8px;
+  }
+}

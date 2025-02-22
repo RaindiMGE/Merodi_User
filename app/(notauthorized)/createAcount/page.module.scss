@@ -1,0 +1,118 @@
+.container {
+    display: flex;
+    align-items: center;
+    background-color: #00101A;
+    max-width: 1440px;
+    width: 100%;
+    height: 100vh;
+    flex-shrink: 1;
+    gap: 5%;
+}
+
+.imageWrapper {
+    position: relative;
+    height: 100vh;
+    max-width: 720px;
+    width: 100%;
+}
+
+
+.createAcountWraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    flex-shrink: 1;
+    width: 100%;
+}
+
+.createAcountBox {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 528px;
+    width: 100%;
+}
+
+.createAcountBox > h1 {
+    color: #E4E4E4;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.link {
+    color: #3396FF;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    max-width: 528px;
+    width: 100%;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    max-width: 528px;
+    width: 100%;
+}
+
+.submitBox {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.submitBox p {
+    color: #E4E4E4;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .container {
+        justify-content: center;
+        flex-shrink: 1;
+    }
+
+    .createAcountWraper {
+        padding: 16px;
+    }
+
+    .imageWrapper {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+        justify-content: center;
+        flex-shrink: 1;
+    }
+
+    .createAcountWraper {
+        max-width: 342px;
+        padding: 16px;
+        flex-shrink: 1;
+    }
+
+    .imageWrapper {
+        display: none;
+    }
+
+    .inputs {
+        max-width: 342px;
+        width: 100%;
+    }
+}

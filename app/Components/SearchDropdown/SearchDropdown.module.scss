@@ -1,0 +1,30 @@
+.container {
+    background-color: #0E1220;
+    width: 384px;
+    border: 1px solid #0E1220;
+    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+}
+
+.songsContainer, .albumsContainer{
+    padding-top: 8px;
+    border-bottom: 1px solid #1A182A;
+}
+
+.artistsContainer {
+    padding-top: 8px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 330px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 278px;
+    }
+}

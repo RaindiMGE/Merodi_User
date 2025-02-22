@@ -1,0 +1,12 @@
+:root {
+  --primary-orange: #F48C06;
+  --primary-hover: #DB7E05;
+  --primary-text-white: #E4E4E4;
+  --secondary-text:#67727E;
+  --additional-background: #000D14;
+  --sidebar-header-background: #001019;
+  --charts-background: #0E1220;
+  --additional-stroke: #1A182A;
+  --primary-linear: linear-gradient(#070233B8 72%, #000D14 100%, #001A29 100%, #070233);
+}
+

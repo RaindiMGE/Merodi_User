@@ -1,0 +1,145 @@
+.container {
+    display: flex;
+    align-items: center;
+    background-color: #00101A;
+    max-width: 1440px;
+    width: 100%;
+    height: 100vh;
+    gap: 4%;
+}
+
+.imageWrapper {
+    position: relative;
+    height: 100vh;
+    max-width: 720px;
+    width: 100%;
+}
+
+.loginWraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px 0 0;
+    flex-shrink: 1;
+    width: 100%;
+}
+
+.loginBox {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 528px;
+    width: 100%;
+}
+
+.loginBox>h1 {
+    color: #E4E4E4;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.loginBox>p {
+    color: #E4E4E4;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.link {
+    color: #3396FF;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    max-width: 528px;
+    width: 100%;
+}
+
+.form>div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    max-width: 528px;
+    width: 100%;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #67727E;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.checkbox input {
+    all: unset;
+    margin: 4px;
+    width: 18px;
+    height: 18px;
+    background-image: url('../../../public/icons/Shape.svg');
+}
+
+.checkbox input:checked {
+    width: 18px;
+    height: 18px;
+    background-image: url('../../../public/icons/afterChackIcon.svg');
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 1;
+    }
+
+    .loginWraper {
+        align-items: center;
+        justify-content: center;
+        max-width: 528px;
+        padding: 16px;
+    }
+
+    .imageWrapper {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+        justify-content: center;
+        flex-shrink: 1;
+    }
+
+    .loginWraper {
+        align-items: center;
+        justify-content: center;
+        max-width: 342px;
+        padding: 16px;
+        flex-shrink: 1;
+    }
+
+    .imageWrapper {
+        display: none;
+    }
+
+    .form {
+        max-width: 342px;
+        width: 100%;
+    }
+}

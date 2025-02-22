@@ -1,0 +1,44 @@
+nav.Navbar {
+    background-color: white;
+    padding: 12px 32px;
+    border-bottom: 1px solid #1A182A;
+    background: #001019;
+    max-width: 1168px;
+
+    .Navdisplay {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        width: 100%;
+        .SearchWrapper{
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+    }
+
+    .burger_svg {
+        width: 32px;
+        height: 32px;
+        position: relative;
+        display: none;
+        cursor: pointer;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .burger_svg {
+            display: inline-block !important;
+        }
+        
+        padding: 12px 24px;
+    }
+
+    @media (max-width: 768px) {
+        .burger_svg {
+            display: inline-block !important;
+        }
+
+        padding: 12px 16px;
+    }
+}

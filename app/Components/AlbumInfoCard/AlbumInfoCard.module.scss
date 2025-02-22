@@ -1,0 +1,255 @@
+.conteiner {
+    display: flex;
+    width: 100%;
+    gap: 32px;
+    align-items: flex-start;
+    padding: 32px;
+    background: linear-gradient(90deg, #000D14 0%, #001A29 100%);
+}
+
+.albumCoverWrapper {
+    width: 480px;
+}
+
+.newStyles {
+    width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.imageClasName {
+    max-width: 308px;
+    width: 308px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.discBoxClassName {
+    position: absolute;
+    left: 200px;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-shrink: 1;
+}
+
+.discImageClassName {
+    width: 280px;
+}
+
+.secondaryCoverClassName {
+    width: 108px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    border-radius: 58px;
+    border: 14px solid #000;
+    position: absolute;
+}
+
+.descriptionWrapper {
+    margin-top: auto;
+}
+
+.descriptionBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+}
+
+.heading>h2 {
+    color: #E4E4E4;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 76px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.description>p {
+    color: #E4E4E4;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.description>span {
+    color: #67727E;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.mainDescriptionWrapper {
+    overflow: hidden;
+    max-width: 518px;
+}
+
+.mainDescription {
+    color: #67727E;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.readMore {
+    color: #3396FF;
+}
+
+.afterShow {
+    color: #67727E;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+    .conteiner {
+        padding: 24px;
+    }
+
+    .heading {
+        gap: 48px;
+    }
+
+    .newStyles {
+        width: 368px;
+    }
+
+    .imageClasName {
+        width: 236px;
+        height: 236px;
+    }
+
+    .discBoxClassName {
+        left: 153px;
+    }
+
+    .discImageClassName {
+        width: 214px;
+        height: 214px;
+    }
+
+    .secondaryCoverClassName {
+        width: 80px;
+        height: 80px;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        border-radius: 58px;
+        border: 14px solid #000;
+        position: absolute;
+    }
+
+    .heading>h2 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .image {
+        width: 56px;
+        height: 56px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .conteiner {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 20px 16px;
+    }
+
+    .heading {
+        gap: 24px;
+    }
+
+    .descriptionBox {
+        align-items: center;
+    }
+
+    .description {
+        align-items: center;
+    }
+
+    .mainDescriptionWrapper {
+        max-width: 450px;
+        text-align: center;
+    }
+
+    .mainDescription {
+        max-width: 450px;
+        text-align: center;
+    }
+
+    .afterShow {
+        max-width: 450px;
+        text-align: center;
+    }
+
+    .albumCoverWrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .heading>h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .newStyles {
+        width: 288px;
+    }
+
+    .imageClasName {
+        max-width: 185px;
+        height: 185px;
+    }
+
+    .discBoxClassName {
+        left: 120px;
+    }
+
+    .discImageClassName {
+        width: 168px;
+        height: 168px;
+    }
+
+    .secondaryCoverClassName {
+        width: 65px;
+        height: 65px;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        border-radius: 58px;
+        border: 9px solid #000;
+        position: absolute;
+    }
+    .image {
+        width: 40px;
+        height: 40px;
+    }
+}

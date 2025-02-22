@@ -1,0 +1,42 @@
+.PlayListContent {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    gap: 16px;
+    
+    .YourFavorites {
+        display: flex;
+        gap: 8px;
+
+        .YourFavoritesText {
+            color: #E4E4E4;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px; 
+        }
+
+        .YourFavoritesContent {
+            display: flex;
+            flex-direction: column;
+            gap: 8px ;
+
+            .YourFavoritesCounter {
+                display: flex;
+                gap: 4px;
+
+                p{
+                    color: #67727E;
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 18px; 
+                }
+            }
+
+        }
+    }
+
+}
